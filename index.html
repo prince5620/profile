@@ -6,7 +6,7 @@
   <title>Prince Yadav — Portfolio</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <meta name="description" content="Portfolio of Prince Yadav — developer, designer, maker." />
+  <meta name="description" content="Portfolio of Prince Yadav — Software Developer, Flutter Developer" />
   <style>
     :root{
       --bg:#ffffff;
@@ -15,77 +15,33 @@
       --accent1:linear-gradient(135deg,#4f46e5 0%,#06b6d4 100%);
       --glass: rgba(255,255,255,0.6);
       --radius:14px;
-      font-family: 'Inter',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+      font-family: 'Inter',system-ui;
     }
     *{box-sizing:border-box}
     html,body{height:100%;margin:0;background:var(--bg);color:#0f172a}
     .container{max-width:1100px;margin:0 auto;padding:36px}
-
-    /* Header / Nav */
     header{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
     .brand{display:flex;gap:12px;align-items:center}
     .logo{width:48px;height:48px;border-radius:10px;background:var(--accent1);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
     nav{display:flex;gap:18px}
     nav a{color:var(--muted);text-decoration:none;font-weight:600}
-
-    /* Hero */
     .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;padding:36px 0}
-    .hero-left h1{font-size:40px;margin:0 0 10px;line-height:1.02}
+    .hero-left h1{font-size:40px;margin:0 0 10px}
     .hero-left p{color:var(--muted);margin:0 0 20px}
-    .cta{display:flex;gap:12px}
     .btn{padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
     .btn-primary{background:var(--accent1);color:white}
     .btn-ghost{background:transparent;border:1px solid #e6eef6;color:var(--muted)}
-    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.7), rgba(250,250,255,0.6));border-radius:16px;padding:20px;box-shadow:0 8px 30px rgba(15,23,42,0.06)}
-    .avatar{width:100%;border-radius:12px;display:block}
-
-    /* Sections */
     section{padding:48px 0;border-top:1px solid #f2f4f7}
     .section-title{display:flex;align-items:center;gap:12px;margin-bottom:18px}
-    .section-title h2{margin:0;font-size:20px}
-    .muted{color:var(--muted)}
-
-    /* About */
-    .about{display:flex;gap:28px;align-items:flex-start}
-    .about .bio{flex:1}
-    .about .meta{width:280px;background:var(--card);padding:18px;border-radius:12px}
-    .meta p{margin:8px 0;color:var(--muted)}
-
-    /* Skills */
     .skills{display:flex;flex-wrap:wrap;gap:10px}
     .skill{background:var(--card);padding:8px 12px;border-radius:999px;font-weight:600}
-
-    /* Projects */
     .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .project{background:linear-gradient(180deg,#fff,#fbfdff);padding:16px;border-radius:12px;border:1px solid #eef3ff;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
-    .project h3{margin:0 0 8px;font-size:16px}
-    .project p{margin:0;color:var(--muted);font-size:14px}
-    .project .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:#eef6ff;color:#2563eb}
-
-    /* Education */
+    .project{background:#fff;padding:16px;border-radius:12px}
     .edu-list{display:flex;flex-direction:column;gap:12px}
     .edu{background:var(--card);padding:12px;border-radius:10px}
-
-    /* Services */
     .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .service{padding:18px;background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px;border:1px solid #eef3ff}
-
-    footer{padding:20px 0;text-align:center;color:var(--muted);font-size:14px}
-
-    /* Responsive */
-    @media (max-width:980px){
-      .hero{grid-template-columns:1fr;}
-      .projects-grid{grid-template-columns:repeat(2,1fr)}
-      .services{grid-template-columns:repeat(2,1fr)}
-    }
-    @media (max-width:640px){
-      .projects-grid{grid-template-columns:1fr}
-      .services{grid-template-columns:1fr}
-      nav{display:none}
-      .container{padding:20px}
-      .hero-left h1{font-size:28px}
-    }
+    .service{padding:18px;background:#fff;border-radius:12px;border:1px solid #eef3ff}
+    footer{padding:20px 0;text-align:center;color:var(--muted)}
   </style>
 </head>
 <body>
@@ -95,158 +51,100 @@
         <div class="logo">PY</div>
         <div>
           <div style="font-weight:700">Prince Yadav</div>
-          <div class="muted" style="font-size:12px">Developer • Designer</div>
+          <div class="muted" style="font-size:12px">Software / Flutter Developer</div>
         </div>
       </div>
       <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <!-- Hero -->
     <section class="hero" id="home">
       <div class="hero-left">
-        <h1>Hi — I’m <span style="background:var(--accent1);-webkit-background-clip:text;background-clip:text;color:transparent">Prince Yadav</span></h1>
-        <p class="muted">I build clean, user-friendly web and mobile experiences. I’m passionate about performance, animation and delightful interfaces.</p>
-        <div class="cta">
-          <button class="btn btn-primary" onclick="scrollToSection('projects')">View Projects</button>
-          <a class="btn btn-ghost" href="#about">About me</a>
-        </div>
-        <div style="margin-top:18px;color:var(--muted);font-size:14px">Based in India • Open to freelance & full‑time</div>
-      </div>
-
-      <div class="hero-card">
-        <img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6c6a9b1f1b0ae1d8c6f1a6b3ea6b8c3e" alt="Avatar">
-        <div style="margin-top:12px;font-weight:700">Featured</div>
-        <div class="muted" style="font-size:13px;margin-top:6px">A modern portfolio template — responsive and easy to customize.</div>
+        <h1>Hi — I'm <span style="background:var(--accent1);-webkit-background-clip:text;color:transparent">Prince Yadav</span></h1>
+        <p class="muted">Software Developer | Flutter Developer | iOS / Android Developer<br>Velocis Systems Pvt Ltd • Delhi, India</p>
       </div>
     </section>
 
-    <!-- About -->
     <section id="about">
-      <div class="section-title"><h2>About me</h2><div class="muted">— who I am</div></div>
-      <div class="about">
-        <div class="bio">
-          <p>Hello! I’m <strong>Prince</strong>, a frontend developer who loves turning designs into fast, accessible interfaces. I focus on JavaScript, Flutter, and clean UI/UX.</p>
-          <p class="muted">When I’m not coding I’m learning new frameworks, reading product design articles, or sketching interaction ideas.</p>
-        </div>
-        <div class="meta">
-          <div style="font-weight:700">Quick facts</div>
-          <p>📍 India</p>
-          <p>💼 Available for hire</p>
-          <p>✉️ prince@example.com</p>
-        </div>
-      </div>
+      <div class="section-title"><h2>About Me</h2></div>
+      <p>I am a dedicated Flutter developer with over 2 years of experience in creating robust and user-friendly mobile applications. I am currently contributing my skills at Velocis Systems Pvt. Ltd. My passion lies in building seamless cross-platform apps that delight users and drive business growth.</p>
+      <p class="muted">Previously at CampusPro Technologies and SA Analytics, I worked on Dart, Android, HTML, CSS, and JavaScript—gaining hands-on experience with modern mobile and web technologies.</p>
     </section>
 
-    <!-- Skills -->
     <section id="skills">
-      <div class="section-title"><h2>Skills</h2><div class="muted">— tools & tech I use</div></div>
+      <div class="section-title"><h2>Skills</h2></div>
       <div class="skills">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS / SASS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">React</div>
         <div class="skill">Flutter</div>
-        <div class="skill">Firebase</div>
+        <div class="skill">Dart</div>
+        <div class="skill">Cross-platform Apps</div>
+        <div class="skill">State Management</div>
+        <div class="skill">REST APIs</div>
         <div class="skill">Git</div>
-        <div class="skill">Figma</div>
+        <div class="skill">Debugging</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Attendance Management</div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
-      <div class="section-title"><h2>Projects</h2><div class="muted">— selected work</div></div>
-      <div class="projects-grid" id="projectsGrid">
-        <div class="project">
-          <h3>Task Manager App</h3>
-          <p class="muted">A cross-platform task manager built with Flutter and Firebase.</p>
-          <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
-        </div>
-        <div class="project">
-          <h3>Portfolio Website</h3>
-          <p class="muted">Personal portfolio built with React and tailwind-inspired styling.</p>
-          <div class="tags"><span class="tag">React</span><span class="tag">Design</span></div>
-        </div>
-        <div class="project">
-          <h3>Chat App</h3>
-          <p class="muted">Real-time chat with presence and push notifications.</p>
-          <div class="tags"><span class="tag">Socket</span><span class="tag">Node.js</span></div>
-        </div>
-        <div class="project">
-          <h3>E‑commerce UI</h3>
-          <p class="muted">A modern product listing and cart experience prototype.</p>
-          <div class="tags"><span class="tag">UI</span><span class="tag">Prototype</span></div>
-        </div>
-        <div class="project">
-          <h3>Analytics Dashboard</h3>
-          <p class="muted">Interactive charts and KPI components for product teams.</p>
-          <div class="tags"><span class="tag">Charts</span><span class="tag">React</span></div>
-        </div>
-        <div class="project">
-          <h3>Landing Page</h3>
-          <p class="muted">Fast performant marketing landing page with forms and A/B ready sections.</p>
-          <div class="tags"><span class="tag">HTML</span><span class="tag">Performance</span></div>
-        </div>
+    <section id="experience">
+      <div class="section-title"><h2>Experience</h2></div>
+
+      <div class="edu">
+        <h3>Velocis Systems Pvt Ltd — Project Engineer (Flutter Developer)</h3>
+        <p class="muted">Sept 2025 – Present</p>
+        <p>• Designing & developing cross-platform mobile apps using Flutter & Dart.<br>• Responsive UIs, REST APIs, state-management, debugging & collaboration with CRIS & IRCTC teams.</p>
+      </div>
+
+      <div class="edu">
+        <h3>CampusPro Technologies Pvt Ltd — Flutter Developer</h3>
+        <p class="muted">July 2024 – Sept 2025</p>
+      </div>
+
+      <div class="edu">
+        <h3>SA Analytics — Flutter Developer</h3>
+        <p class="muted">March 2023 – June 2024</p>
       </div>
     </section>
 
-    <!-- Education -->
     <section id="education">
-      <div class="section-title"><h2>Education</h2><div class="muted">— formal background</div></div>
+      <div class="section-title"><h2>Education</h2></div>
       <div class="edu-list">
         <div class="edu">
-          <div style="font-weight:700">B.Tech in Computer Science</div>
-          <div class="muted">University Name — 2018 - 2022</div>
-        </div>
-        <div class="edu">
-          <div style="font-weight:700">Full‑stack development bootcamp</div>
-          <div class="muted">Online — 2023</div>
+          <h3>B.Tech — Information Technology</h3>
+          <p class="muted">Sir Chhotu Ram Institute of Engineering & Technology, Meerut<br>2020 – 2024</p>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
     <section id="services">
-      <div class="section-title"><h2>Services</h2><div class="muted">— what I offer</div></div>
+      <div class="section-title"><h2>Services</h2></div>
       <div class="services">
-        <div class="service">
-          <div style="font-weight:700">Web Development</div>
-          <p class="muted">Responsive websites, SPAs, and performance optimization.</p>
-        </div>
-        <div class="service">
-          <div style="font-weight:700">Mobile Apps</div>
-          <p class="muted">Cross-platform apps using Flutter — pixel-perfect and fast.</p>
-        </div>
-        <div class="service">
-          <div style="font-weight:700">UI/UX Design</div>
-          <p class="muted">Design systems, prototypes, and handoff-ready design files.</p>
-        </div>
+        <div class="service"><h3>Mobile App Development</h3><p>Flutter apps for Android & iOS</p></div>
+        <div class="service"><h3>Frontend Development</h3><p>HTML, CSS, JS, Responsive UI</p></div>
+        <div class="service"><h3>API Integration</h3><p>REST APIs, JSON, performance optimization</p></div>
       </div>
     </section>
 
-    <footer>
-      © <span id="year"></span> Prince Yadav — Built with ❤️
-    </footer>
+    <section id="contact">
+      <div class="section-title"><h2>Contact</h2></div>
+      <p><strong>Phone:</strong> 9451614635</p>
+      <p><strong>Email:</strong> princey5620@gmail.com</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/princeyadav-3457b4239</p>
+    </section>
+
+    <footer>© <span id="year"></span> Prince Yadav — Portfolio</footer>
   </div>
 
   <script>
-    // small helpers
-    function scrollToSection(id){
-      const el = document.getElementById(id);
-      if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
-    }
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // simple responsive adjustments for images (optional)
-    window.addEventListener('load', ()=>{
-      const imgs = document.querySelectorAll('.avatar');
-      imgs.forEach(i=>{ i.onerror = ()=> i.style.display='none' })
-    })
   </script>
 </body>
 </html>
